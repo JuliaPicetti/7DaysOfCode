@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --gray: #667085;
+    --highlights: #8e2424;
+    --bold: #101828;
+    --color-font-bottom: #FFFFFF;
+    --header: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*navigation menu*/
+nav {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+    background-color: var(--header);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.menu-navigation a {
+    list-style-type: none;
+}
+
+.menu-item {
+    margin-right: 1em;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.login {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.register {
+    text-decoration: none;
+    margin-left: 0.8em;
+    color: var(--color-font-bottom);
+    background-color: var(--highlights);
+    padding: 0.8em;
+    border-radius: 8px;
+}
+
+/* presentation header*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin: 5em 0;
+}
+
+.tag {
+    color: var(--highlights);
+    font-weight: 600;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 29%;
+    color: var(--gray);
+}
+
+/*presentation metrics*/
+
+.metrics {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 2em 5em;
+}
+
+.chapter-metrics {
+    padding: 4em;
+}
+
+.metrics-data {
+    font-size: 72px;
+    font-weight: 600;
+    color: var(--highlights);
+}
+
+.metrics-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bold);
+}
+
+.metrics-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+}
