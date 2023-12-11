@@ -6,12 +6,15 @@
     --bold: #101828;
     --color-font-bottom: #FFFFFF;
     --header: #FFFFFF;
+    --details: #EAECF0;
+    --footer: #F9FAFB;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
 }
 
 /*navigation menu*/
@@ -26,6 +29,46 @@ nav {
     padding: 2em;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+}
+
+.header-menulogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 1em;
+
+}
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-navigation {
+    display: block;
+}
+
+.access a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
 .menu-navigation a {
     list-style-type: none;
 }
@@ -34,6 +77,8 @@ nav {
     margin-right: 1em;
     text-decoration: none;
     color: var(--gray);
+    text-decoration: none;
+    margin-right: 15px;
 }
 
 .login {
@@ -56,36 +101,39 @@ nav {
     flex-direction: column;
     text-align: center;
     gap: 30px;
-    margin: 5em 0;
+    margin: 5em 25em;
 }
 
-.tag {
+.banner-tag {
     color: var(--highlights);
     font-weight: 600;
 }
 
-.title {
+.banner-title {
     font-weight: 600;
     font-size: 48px;
 }
 
-.text {
+.banner-description {
     font-weight: 400;
     font-size: 20px;
-    margin: 0 29%;
     color: var(--gray);
 }
 
 /*presentation metrics*/
 
 .metrics {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    padding: 2em 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5em;
 }
 
 .chapter-metrics {
-    padding: 4em;
+    width: 20%;
+    margin: 2em 0;
+    padding: 1em;
+    box-sizing: border-box;
 }
 
 .metrics-data {
@@ -104,4 +152,253 @@ nav {
     font-size: 16px;
     font-weight: 400;
     color: var(--gray);
+}
+
+/*open job vacancies section*/
+
+.open-vacancies {
+    align-items: center;
+    text-align: center;
+}
+
+.vacancies-tag {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--highlights);
+    border-radius: 16px;
+    background: rgba(142, 36, 36, 0.05);
+    padding: 0.3em;
+}
+
+.vacancies-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.vacancies-description {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.vacancies-img {
+    width: 100%;
+}
+
+/*available vacancies and specifications*/
+
+.jobs {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bold);
+    margin: 2% 25%;
+}
+
+.jobs-card {
+    border: 1px solid var(--details);
+    border-radius: 16px;
+    padding: 2% 1.5%;
+    margin: 2% 25%;
+}
+
+.jobs-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bold);
+    margin-bottom: 2em;
+}
+
+.jobs-details {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.period {
+    margin-right: 1em;
+}
+
+/*comments from company employees*/
+
+.card-collaborators {
+    background: rgba(142, 36, 36, 0.05);
+    display: flex;
+    padding: 4em 16em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+    margin: 6em;
+    border-radius: 16px;
+}
+
+.collaborators-tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--highlights);
+}
+
+.collaborators-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--bold);
+}
+
+.collaborators-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bold);
+}
+
+.collaborators-role {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+footer {
+    background-color: var(--footer);
+    display: flex;
+    padding: 6em 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    text-align: center;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.footer-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--bold);
+}
+
+.footer-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.fill-field {
+    padding: 1em;
+    gap: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #D0D5DD;
+    background: var(--header);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.footer-register {
+    text-decoration: none;
+    margin-left: 0.8em;
+    color: var(--color-font-bottom);
+    background-color: var(--highlights);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.footer-rights {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+@media screen and (max-width: 1284px) {
+
+    .banner {
+        margin: 5em;
+    }
+
+    .card-collaborators {
+        padding: 3em;
+        margin: 1em;
+    }
+
+    .chapter-metrics {
+        width: 45%;
+        padding: 1em 4em;
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+
+    .metrics {
+        align-items: center;
+        text-align: center;
+    }
+
+    .chapter-metrics {
+        width: 90%;
+        padding: 1em 8em;
+        margin: 1em;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+        order: 1;
+    }
+
+    .logo {
+        margin-left:-15em;
+        order: 2;
+    }
+
+    .access{
+        order: 3;
+    }
+
+    .menu-navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Ajuste conforme necessário */
+        left: 0;
+        width: 30%;
+        background-color: var(--header);
+        padding: 1em;
+    }
+
+    .menu-navigation.show {
+        display: flex;
+    }
+
+    .menu-item {
+        margin-right: 0;
+        padding: 0.5em 0;
+    }
+
+    .menu-item:hover{
+        background-color: var(--highlights);
+        color: var(--color-font-bottom);
+        padding: 0.5em 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .banner {
+        margin: 2em;
+    }
+
+    .card-collaborators{
+        margin: 3em 1em;
+    }
 }

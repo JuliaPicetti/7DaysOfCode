@@ -9,26 +9,32 @@
 </head>
 
 <body>
+    <header>
     <nav class="header-nav">
-        <img src="imgs/Logo.svg" alt="Logo OptimusTech">
-        <div class="menu-navigation"></div>
-        <a href="#" class="menu-item">Home</a>
-        <a href="#" class="menu-item">Produtos</a>
-        <a href="#" class="menu-item">Recursos</a>
-        <a href="#" class="menu-item">Sobre nós</a>
+        <img src="imgs/Logo.svg" alt="Logo OptimusTech" class="logo">
+        <div class="menu-container">
+            <div class="menu-icon">&#9776;</div>
+            <div class="menu-navigation">
+                <a href="#" class="menu-item">Home</a>
+                <a href="#" class="menu-item">Produtos</a>
+                <a href="#" class="menu-item">Recursos</a>
+                <a href="#" class="menu-item">Sobre nós</a>
+            </div>
         </div>
         <div class="access">
             <a href="#" class="login">Entrar</a>
             <a href="#" class="register">Cadastrar</a>
         </div>
     </nav>
+</header>
 
-    <header class="banner">
-        <span class="tag">Sobre nós</span>
-        <h1 class="title">Por que somos diferentes?</h1>
-        <p class="text">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se
+    <section class="banner">
+        <span class="banner-tag">Sobre nós</span>
+        <h1 class="banner-title">Por que somos diferentes?</h1>
+        <p class="banner-description">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo
+            o mundo a se
             concentrarem naquilo que é realmente importante para elas.</p>
-    </header>
+    </section>
 
     <section class="metrics">
         <div class="chapter-metrics">
@@ -58,6 +64,83 @@
                 produtos.</p>
         </div>
     </section>
+
+    <div class="open-vacancies">
+        <label for="vacancies-title" class="vacancies-tag"> <span>Vagas abertas!</span></label>
+        <h2 class="vacancies-title">Estamos procurando por talentos</h2>
+        <p class="vacancies-description">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
+        <img src="imgs/Foto de Equipe.jpg" alt="Imagem de equipe em uma sala de reunião" class="vacancies-img">
+    </div>
+
+    <section class="jobs-available">
+        <div class="jobs-design">
+            <h2 class="jobs">Design</h2>
+            <div class="jobs-card">
+                <h3 class="jobs-title">Product Designer</h3>
+                <div class="jobs-details">
+                    <p class="period">Full Time</p>
+                    <p class="wage">Faixa Salarial: R$ 7.000</p>
+                </div>
+            </div>
+            <div class="jobs-card">
+                <h3 class="jobs-title">UX Designer</h3>
+                <div class="jobs-details">
+                    <p class="period">Full Time</p>
+                    <p class="wage">Faixa Salarial: R$6.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="jobs-development">
+            <h2 class="jobs">Desenvolvimento de Software</h2>
+            <div class="jobs-card">
+                <h3 class="jobs-title">Desenvolvedor(a) iOS</h3>
+                <div class="jobs-details">
+                    <p class="period">Full Time</p>
+                    <p class="wage">Faixa Salarial: R$ 8.000</p>
+                </div>
+            </div>
+            <div class="jobs-card">
+                <h3 class="jobs-title">Desenvolvedor(a) Front-end</h3>
+                <div class="jobs-details">
+                    <p class="period">Full Time</p>
+                    <p class="wage">Faixa Salarial: R$7.000</p>
+                </div>
+            </div>
+            <div class="jobs-card">
+                <h3 class="jobs-title">Desenvolvedor(a) Back-end</h3>
+                <div class="jobs-details">
+                    <p class="period">Full Time</p>
+                    <p class="wage">Faixa Salarial: R$8.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-collaborators">
+        <label for="collaborators-title" class="collaborators-tag">Veja o que nossos colaboradores falam sobre
+            nós</label>
+        <h2 class="collaborators-title">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos
+            dar todo tipo de auxílio possível.</h2>
+        <div class="contributor">
+            <img src="imgs/Avatar.png" alt="Foto da Colaboradora Julia Castro">
+            <p class="collaborators-name">Júlia Castro</p>
+            <p class="collaborators-role">Desenvolvedora Web</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-details">
+            <h2 class="footer-title">Acompanhe as nossas oportunidades</h2>
+            <p class="footer-text">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+        </div>
+        <div class="email">
+            <input type="email" placeholder="Seu e-mail" class="fill-field">
+            <a href="#" class="footer-register">Cadastrar</a>
+        </div>
+        <p class="footer-rights">© 2022 OptimusTech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
